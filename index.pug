@@ -1,0 +1,66 @@
+doctype html
+html(lang="en")
+    head
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")
+        link(rel="stylesheet" href="../main.css")
+        link(rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous")
+
+    body
+        header
+             nav.navigation
+                p Welcome! This site is under construction :( ... But you can check some of the projects i have worked on. 
+                //- ul
+                //-     li.list-item
+                //-         a.list-item__link(href="#portfolio") Inicio
+                //-     li.list-item
+                //-         a.list-item__link(href="#aboutMe") About Me
+                //-     li.list-item
+                //-         a.list-item__link(href="#contactMe") Let's work together 
+        section#mainSection.presentation 
+            .presentation-wrapper
+                h1.presentation__title Hi! <br>I'm Maria Paulina, UI Designer
+                ul.social
+                    li.social-item
+                        a.social-item__link(href="http://www.dribbble.com/jemapau" target="_blank") 
+                            i.fab.fa-dribbble
+                    li.social-item
+                        a.social-item__link(href="http://www.github.com/jemapau" target="_blank") 
+                            i.fab.fa-github-alt
+                    li.social-item
+                        a.social-item__link(href="http://www.linkedin.com/in/jemapau" target="_blank") 
+                            i.fab.fa-linkedin-in
+        section#portfolio.portfolio
+            .wrapper.card-columns
+                article.portfolio__article.card.col-sm-12
+                    h3 WOBI Catalog
+                    h6  Project for World of Business Ideas
+                    p.portfolio__desc   This Catalog was created for Innovation, entrepreunership, and creative fields.
+                    a.portfolio__link.btn(href="http://wobicatalogue.com/#home" target="_blank") See Project
+                article.portfolio__article.card.col-sm-12
+                    h3 TODO List
+                    h6 REACT project
+                    p.portfolio_desc   Project was created during Bootcamp Female Edition
+                    a.portfolio__link.btn(href="https://todo-list-zgrniqxdyl.now.sh/" target="_blank") See Project
+                article.portfolio__article.card.col-sm-12
+                    h3 Special El Colombiano
+                    h6 HTML, CSS and JavaScript
+                    p.portfolio_desc   Newspaper special remembering a zone on Medellin City affected by violence
+                    a.portfolio__link.btn(href="http://www.elcolombiano.com/especiales/operacion-orion" target="_blank") See Project
+        //- section#aboutMe.about-me
+        //-         h2 About Me
+        //-         article
+        //-             figure
+        //-                 img(src="", alt="Image description")
+        //-             h3 Description
+        //-             p   This is a description Tag
+        //- section#contactMe.contact-me
+        //-         form(action="/suscription")
+        //-             h2 Let's create something together
+        //-             input(type="text" placeholder="Drop a line" id="email")
+        //-             button Send
+        footer#footer
+            p.date 2019 
+            p.icons 
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><title>ico</title><path id="square" d="M5.55,5.55v13.9h13.9V5.55ZM7.87,17.13V7.88h9.25v9.25Z"/></svg>
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><title>ico</title><path id="circle" d="M12.5,5.55a6.95,6.95,0,1,0,6.95,6.95A7,7,0,0,0,12.5,5.55Zm4.63,6.95A4.63,4.63,0,1,1,12.5,7.87,4.63,4.63,0,0,1,17.13,12.5Z"/></svg>
+                <svg id="Capa_1" data-name="Capa 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><title>ico</title><path id="triangle" d="M12.5,4.83,4.83,20.17H20.17Zm-3.91,13L12.5,10l3.91,7.81Z"/></svg>

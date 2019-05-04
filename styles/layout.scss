@@ -1,0 +1,229 @@
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 800;
+}
+
+body {
+    color: $black;
+}
+
+p {
+    line-height: 1.4;
+}
+
+.navigation {
+
+    position: fixed;
+    display: flex;
+    left: 0;
+    right: 0;
+    align-content: stretch;
+    justify-content: center;
+    height: auto;
+    background: white;
+    font-size: $font-sm;
+    padding: 10px;
+
+    p {
+        margin: 0px;
+    }
+
+    ul {
+
+        display: flex;
+        align-content: stretch;
+        justify-content: center;
+        padding-left: 0px;
+        margin: 0px;
+
+        .list-item { 
+            
+            text-decoration: none;
+            list-style: none;
+            display: inline-flex;
+            padding: 10px;
+
+            &__link {
+
+                display: flex;
+                align-content: stretch;
+                text-decoration: none;
+                align-self:  center;
+                color: black;
+
+                &:hover {  color: grey; }
+
+            }
+        
+        }
+
+    }
+
+}
+
+section  {
+
+    &.presentation {
+
+        display: flex;
+        height: 60vh;
+        align-items: center;
+        align-content: center;
+        justify-content: center;    
+
+    }
+
+    .presentation {
+
+        &-wrapper {
+            align-content: center;
+
+            .social {
+                float: right;
+
+                &-item {
+
+                    list-style: none;
+                    display: inline;
+
+                    &__link { 
+                        color: $secondary;
+                        font-size: $font-lg;
+                        margin: 0px 5px;
+
+                        &:hover {
+
+                            opacity: 0.5;
+
+                        }
+                     }
+    
+                }
+    
+            }
+
+        }
+
+        &__title {
+
+            font-size: $font-xxl;
+            font-family: 'Abril Fatface', cursive;
+            font-weight: normal;
+            align-content: center;
+            color: $primary;
+
+        }
+
+    }
+
+    &.portfolio {
+        max-width: 1024px;
+        margin: 0 auto;
+        position: relative;
+
+         .wrapper {
+             position: relative;
+
+            .portfolio {
+
+                &__title {
+
+                    padding: 20px 0px;
+                    display: none;
+
+                }
+
+                &__article {
+
+                    padding: 30px;
+                    border-radius: 5px;
+                    border: 0px;
+                    background: white;
+                    height: auto;
+                    display: inline-block;
+                    box-sizing: border-box;
+
+                    h6 {
+                        margin: 10px 0;
+                        font-size: 14px;
+                        color: grey;
+                    }
+
+                    p {  margin: 20px 0px;}
+
+                }
+
+ 
+
+                &__link {
+
+                    text-decoration: none;
+                    color: white;
+                    padding: 10px;
+                    border: none;
+                    background: $primary;
+
+                    &:focus { box-shadow: 0 0 0 0.2rem $grey-light; }
+
+                    &:hover { background: $secondary; }
+
+                }
+
+            }
+
+         }
+
+    }
+}
+
+footer {
+
+    display: grid;
+    left: 0;
+    right: 0;
+    align-content: stretch;
+    justify-content: center;
+    height: auto;
+    padding: 20px 0px;
+
+    .date {
+        display: grid;
+        justify-content: center;
+        margin-bottom: 0px;
+        font-weight: bold;
+        word-spacing: 0.5em;
+        color: $grey;
+    }
+
+    .icons {
+        margin-bottom: 0px;
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(3, 20px);
+    }
+
+    #square {
+        fill: $primary;
+    }
+
+    #circle {
+        fill: $secondary;
+    }
+
+    #triangle {
+        fill: $orange;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .portfolio__article {
+        border-radius: 0px !important;
+    }
+}
+

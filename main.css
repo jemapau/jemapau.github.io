@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
+@import url("https://fonts.googleapis.com/css?family=Yantramanav");
+* {
+  margin: 0px; }
+
+body {
+  background-color: #f1f1f1;
+  font-family: 'Yantramanav', 'Arial', sans-serif; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 800; }
+
+body {
+  color: #444444; }
+
+p {
+  line-height: 1.4; }
+
+.navigation {
+  position: fixed;
+  display: flex;
+  left: 0;
+  right: 0;
+  align-content: stretch;
+  justify-content: center;
+  height: auto;
+  background: white;
+  font-size: 14px;
+  padding: 10px; }
+  .navigation p {
+    margin: 0px; }
+  .navigation ul {
+    display: flex;
+    align-content: stretch;
+    justify-content: center;
+    padding-left: 0px;
+    margin: 0px; }
+    .navigation ul .list-item {
+      text-decoration: none;
+      list-style: none;
+      display: inline-flex;
+      padding: 10px; }
+      .navigation ul .list-item__link {
+        display: flex;
+        align-content: stretch;
+        text-decoration: none;
+        align-self: center;
+        color: black; }
+        .navigation ul .list-item__link:hover {
+          color: grey; }
+
+section.presentation {
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  align-content: center;
+  justify-content: center; }
+section .presentation-wrapper {
+  align-content: center; }
+  section .presentation-wrapper .social {
+    float: right; }
+    section .presentation-wrapper .social-item {
+      list-style: none;
+      display: inline; }
+      section .presentation-wrapper .social-item__link {
+        color: #e9509c;
+        font-size: 24px;
+        margin: 0px 5px; }
+        section .presentation-wrapper .social-item__link:hover {
+          opacity: 0.5; }
+section .presentation__title {
+  font-size: 60px;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  align-content: center;
+  color: #4059a8; }
+section.portfolio {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative; }
+  section.portfolio .wrapper {
+    position: relative; }
+    section.portfolio .wrapper .portfolio__title {
+      padding: 20px 0px;
+      display: none; }
+    section.portfolio .wrapper .portfolio__article {
+      padding: 30px;
+      border-radius: 5px;
+      border: 0px;
+      background: white;
+      height: auto;
+      display: inline-block;
+      box-sizing: border-box; }
+      section.portfolio .wrapper .portfolio__article h6 {
+        margin: 10px 0;
+        font-size: 14px;
+        color: grey; }
+      section.portfolio .wrapper .portfolio__article p {
+        margin: 20px 0px; }
+    section.portfolio .wrapper .portfolio__link {
+      text-decoration: none;
+      color: white;
+      padding: 10px;
+      border: none;
+      background: #4059a8; }
+      section.portfolio .wrapper .portfolio__link:focus {
+        box-shadow: 0 0 0 0.2rem #eeeeee; }
+      section.portfolio .wrapper .portfolio__link:hover {
+        background: #e9509c; }
+
+footer {
+  display: grid;
+  left: 0;
+  right: 0;
+  align-content: stretch;
+  justify-content: center;
+  height: auto;
+  padding: 20px 0px; }
+  footer .date {
+    display: grid;
+    justify-content: center;
+    margin-bottom: 0px;
+    font-weight: bold;
+    word-spacing: 0.5em;
+    color: #bbbbbb; }
+  footer .icons {
+    margin-bottom: 0px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 20px); }
+  footer #square {
+    fill: #4059a8; }
+  footer #circle {
+    fill: #e9509c; }
+  footer #triangle {
+    fill: #f7901e; }
+
+@media (max-width: 575px) {
+  .portfolio__article {
+    border-radius: 0px !important; } }
+
+/*# sourceMappingURL=main.css.map */
