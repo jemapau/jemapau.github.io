@@ -31,7 +31,8 @@ p {
   height: auto;
   background: white;
   font-size: 14px;
-  padding: 10px; }
+  padding: 10px;
+  z-index: 2; }
   .navigation p {
     margin: 0px; }
   .navigation ul {
