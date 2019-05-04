@@ -1,1 +1,1 @@
-# Version Control
+# Maria Paulina Arenas Agudelo | UI Designer
