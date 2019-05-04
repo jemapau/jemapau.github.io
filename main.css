@@ -143,6 +143,9 @@ footer {
 
 @media (max-width: 575px) {
   .portfolio__article {
-    border-radius: 0px !important; } }
+    border-radius: 0px !important; }
+
+  .icon {
+    width: auto; } }
 
 /*# sourceMappingURL=main.css.map */
