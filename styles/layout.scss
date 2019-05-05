@@ -10,6 +10,7 @@ h6 {
 
 body {
     color: $black;
+    font-family: $font-family;
 }
 
 p {
@@ -18,7 +19,7 @@ p {
 
 .navigation {
 
-    position: fixed;
+    position: relative;
     display: flex;
     left: 0;
     right: 0;
@@ -223,12 +224,21 @@ footer {
 }
 
 @media (max-width: 575px) {
+
+    .presentation {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        height: auto;
+
+        .presentation__title { font-size: $font-xxl; }
+    }
+
     .portfolio__article {
         border-radius: 0px !important;
     }
 
     .icon {
-        width: auto;
+        width: 25px;
     }
 }
 

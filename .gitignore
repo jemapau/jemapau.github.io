@@ -60,3 +60,5 @@ typings/
 .DS_Store
 
 .sass-cache
+
+analytics.md

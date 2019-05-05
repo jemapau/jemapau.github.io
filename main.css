@@ -16,13 +16,14 @@ h6 {
   font-weight: 800; }
 
 body {
-  color: #444444; }
+  color: #444444;
+  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 p {
   line-height: 1.4; }
 
 .navigation {
-  position: fixed;
+  position: relative;
   display: flex;
   left: 0;
   right: 0;
@@ -142,10 +143,17 @@ footer {
     fill: #f7901e; }
 
 @media (max-width: 575px) {
+  .presentation {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    height: auto; }
+    .presentation .presentation__title {
+      font-size: 60px; }
+
   .portfolio__article {
     border-radius: 0px !important; }
 
   .icon {
-    width: auto; } }
+    width: 25px; } }
 
 /*# sourceMappingURL=main.css.map */

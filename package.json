@@ -14,5 +14,8 @@
   "license": "MIT",
   "devDependencies": {
     "pug": "^2.0.3"
+  },
+  "dependencies": {
+    "static-server": "^2.2.1"
   }
 }
