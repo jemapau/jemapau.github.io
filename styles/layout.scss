@@ -31,6 +31,10 @@ p {
     padding: 10px;
     z-index: 2;
 
+    &.disable {
+        display: none;
+    }
+
     p {
         margin: 0px;
     }

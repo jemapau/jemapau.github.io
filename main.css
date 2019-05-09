@@ -34,6 +34,8 @@ p {
   font-size: 14px;
   padding: 10px;
   z-index: 2; }
+  .navigation.disable {
+    display: none; }
   .navigation p {
     margin: 0px; }
   .navigation ul {
