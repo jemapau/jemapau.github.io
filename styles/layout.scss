@@ -19,7 +19,7 @@ p {
 
 .navigation {
 
-    position: relative;
+    position: fixed;
     display: flex;
     left: 0;
     right: 0;
@@ -27,17 +27,22 @@ p {
     justify-content: center;
     height: auto;
     background: white;
-    font-size: $font-sm;
+    font-size: $font-md;
     padding: 10px;
     z-index: 2;
+    transform: translateZ(0px);
+    transition: transform 0.4s ease-in-out;
+    -webkit-box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
+    box-shadow: 0 4px 12px 0 rgba(0,0,0,.05)!important;
 
-    &.disable {
-        display: none;
+    &.hidden { 
+        transition: all 0.4s ease-in-out;
+        -ms-transform: translateY(-101%);
+        transform: translateY(-101%);
+        visibility: hidden;
     }
 
-    p {
-        margin: 0px;
-    }
+    p { margin: 0px; }
 
     ul {
 
@@ -204,6 +209,7 @@ footer {
         font-weight: bold;
         word-spacing: 0.5em;
         color: $grey;
+        font-size: $font-sm;
     }
 
     .icons {

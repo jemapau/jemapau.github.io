@@ -23,7 +23,7 @@ p {
   line-height: 1.4; }
 
 .navigation {
-  position: relative;
+  position: fixed;
   display: flex;
   left: 0;
   right: 0;
@@ -33,9 +33,16 @@ p {
   background: white;
   font-size: 14px;
   padding: 10px;
-  z-index: 2; }
-  .navigation.disable {
-    display: none; }
+  z-index: 2;
+  transform: translateZ(0px);
+  transition: transform 0.4s ease-in-out;
+  -webkit-box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !important;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05) !important; }
+  .navigation.hidden {
+    transition: all 0.4s ease-in-out;
+    -ms-transform: translateY(-101%);
+    transform: translateY(-101%);
+    visibility: hidden; }
   .navigation p {
     margin: 0px; }
   .navigation ul {
@@ -131,7 +138,8 @@ footer {
     margin-bottom: 0px;
     font-weight: bold;
     word-spacing: 0.5em;
-    color: #bbbbbb; }
+    color: #bbbbbb;
+    font-size: 11px; }
   footer .icons {
     margin-bottom: 0px;
     display: grid;
