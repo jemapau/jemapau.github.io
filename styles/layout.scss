@@ -69,6 +69,11 @@ p {
 
                 &:hover {  color: grey; }
 
+                &:focus { 
+                    outline: 0px; 
+                    color: $orange;
+                }
+
             }
         
         }

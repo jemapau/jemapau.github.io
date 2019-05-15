@@ -64,6 +64,9 @@ p {
         color: black; }
         .navigation ul .list-item__link:hover {
           color: grey; }
+        .navigation ul .list-item__link:focus {
+          outline: 0px;
+          color: #f7901e; }
 
 section.presentation {
   display: flex;
