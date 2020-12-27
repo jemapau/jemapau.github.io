@@ -1,11 +1,15 @@
 @import url("https://fonts.googleapis.com/css?family=Abril+Fatface");
 @import url("https://fonts.googleapis.com/css?family=Yantramanav");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
+@font-face {
+  font-family: 'Bastia';
+  src: local("Bastia"), url(Bastia-Bold.woff2) format("woff2"), url(Bastia-Bold.woff) format("woff"), url(Bastia-Bold.ttf) format("truetype"), url(Bastia-Bold.otf) format("opentype"), url(Bastia-Bold.eot) format("embedded-opentype"); }
 * {
   margin: 0px; }
 
 body {
-  background-color: #f1f1f1;
-  font-family: 'Yantramanav', 'Arial', sans-serif; }
+  font-family: 'Work Sans', sans-serif;
+  font-size: 18px; }
 
 h1,
 h2,
@@ -17,10 +21,29 @@ h6 {
 
 body {
   color: #444444;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  font-family: "Work Sans", sans-serif -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
 
 p {
   line-height: 1.4; }
+
+.no-margin {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.button {
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: 25px;
+  padding: 10px 20px;
+  text-align: center;
+  transition: all 0.1s ease-in-out;
+  font-size: 0.88em; }
+  .button:hover {
+    background-color: #000000;
+    text-decoration: none;
+    color: white; }
 
 .navigation {
   position: fixed;
@@ -31,7 +54,7 @@ p {
   justify-content: center;
   height: auto;
   background: white;
-  font-size: 14px;
+  font-size: 18px;
   padding: 10px;
   z-index: 2;
   transform: translateZ(0px);
@@ -65,67 +88,44 @@ p {
         .navigation ul .list-item__link:hover {
           color: grey; }
         .navigation ul .list-item__link:focus {
-          outline: 0px;
-          color: #f7901e; }
+          outline: 0px; }
 
+section .title {
+  font-family: "Bastia", serif;
+  color: #000000; }
 section.presentation {
-  display: flex;
-  height: 50vh;
-  align-items: center;
-  align-content: center;
-  justify-content: center; }
+  margin-top: 5%; }
 section .presentation-wrapper {
   align-content: center; }
+  section .presentation-wrapper .title {
+    margin-bottom: 20px; }
   section .presentation-wrapper .social {
-    float: right; }
+    padding-left: 0px;
+    margin-bottom: 40px; }
     section .presentation-wrapper .social-item {
       list-style: none;
       display: inline; }
       section .presentation-wrapper .social-item__link {
-        color: #e9509c;
-        font-size: 24px;
+        color: #000000;
+        font-size: 1.33em;
         margin: 0px 5px; }
         section .presentation-wrapper .social-item__link:hover {
-          opacity: 0.5; }
+          opacity: 0.5;
+          text-decoration: none; }
 section .presentation__title {
-  font-size: 60px;
-  font-family: 'Abril Fatface', cursive;
+  font-size: 3.3em;
+  font-family: "Bastia", serif;
   font-weight: normal;
   align-content: center;
-  color: #4059a8; }
-section.portfolio {
-  max-width: 1024px;
-  margin: 0 auto;
-  position: relative; }
-  section.portfolio .wrapper {
-    position: relative; }
-    section.portfolio .wrapper .portfolio__title {
-      padding: 20px 0px;
-      display: none; }
-    section.portfolio .wrapper .portfolio__article {
-      padding: 30px;
-      border-radius: 5px;
-      border: 0px;
-      background: white;
-      height: auto;
-      display: inline-block;
-      box-sizing: border-box; }
-      section.portfolio .wrapper .portfolio__article h6 {
-        margin: 10px 0;
-        font-size: 14px;
-        color: grey; }
-      section.portfolio .wrapper .portfolio__article p {
-        margin: 20px 0px; }
-    section.portfolio .wrapper .portfolio__link {
-      text-decoration: none;
-      color: white;
-      padding: 10px;
-      border: none;
-      background: #4059a8; }
-      section.portfolio .wrapper .portfolio__link:focus {
-        box-shadow: 0 0 0 0.2rem #eeeeee; }
-      section.portfolio .wrapper .portfolio__link:hover {
-        background: #e9509c; }
+  color: #000000;
+  margin-bottom: 40px; }
+
+.talk {
+  padding: 20px 0px;
+  border-bottom: 1px solid #eeeeee; }
+
+.talk-date {
+  font-size: 0.88em; }
 
 footer {
   display: grid;
@@ -141,19 +141,18 @@ footer {
     margin-bottom: 0px;
     font-weight: bold;
     word-spacing: 0.5em;
-    color: #bbbbbb;
-    font-size: 11px; }
+    font-size: 0.88em; }
   footer .icons {
     margin-bottom: 0px;
     display: grid;
     justify-content: center;
     grid-template-columns: repeat(3, 20px); }
-  footer #square {
-    fill: #4059a8; }
-  footer #circle {
-    fill: #e9509c; }
-  footer #triangle {
-    fill: #f7901e; }
+
+.footer {
+  color: #000000; }
+  .footer-logo {
+    width: 50px;
+    display: inline-block; }
 
 @media (max-width: 575px) {
   .presentation {
@@ -161,7 +160,7 @@ footer {
     padding-bottom: 40px;
     height: auto; }
     .presentation .presentation__title {
-      font-size: 60px; }
+      font-size: 3.3em; }
 
   .portfolio__article {
     border-radius: 0px !important; }

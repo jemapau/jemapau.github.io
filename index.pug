@@ -20,8 +20,8 @@ html(lang="en")
 
     body
         header
-             nav.navigation#msg
-                p Welcome! This site is under construction, but you can check some of the projects i have worked on. 
+            //-  nav.navigation#msg
+            //-     p Welcome! This site is under construction, but you can check some of the projects i have worked on. 
                 //- ul
                 //-     li.list-item
                 //-         a.list-item__link(href="#portfolio") Inicio
@@ -30,50 +30,35 @@ html(lang="en")
                 //-     li.list-item
                 //-         a.list-item__link(href="#contactMe") Let's work together 
         section#mainSection.presentation.col-md-12.col-sm-12 
-            .presentation-wrapper
-                h1.presentation__title Hi! <br>I'm Maria Paulina, UI Designer
-                ul.social
-                    li.social-item
-                        a.social-item__link(href="http://bit.ly/jemapau" target="_blank") 
-                            i.fab.fa-dribbble
-                    li.social-item
-                        a.social-item__link(href="http://bit.ly/2VzKd0q" target="_blank") 
-                            i.fab.fa-github-alt
-                    li.social-item
-                        a.social-item__link(href="http://bit.ly/linkedin" target="_blank") 
-                            i.fab.fa-linkedin-in
-        section#portfolio.portfolio
-            .wrapper.card-columns
-                article.portfolio__article.card.col-sm-12
-                    h3 WOBI Catalog
-                    h6  Project for World of Business Ideas
-                    p.portfolio__desc   This Catalog was created for Innovation, entrepreunership, and creative fields.
-                    a.portfolio__link.btn(href="http://bit.ly/wobicatalogue" target="_blank") See Project
-                article.portfolio__article.card.col-sm-12
-                    h3 TODO List
-                    h6 REACT project
-                    p.portfolio_desc   Project was created during Bootcamp Female Edition
-                    a.portfolio__link.btn(href="https://todo-list-zgrniqxdyl.now.sh/" target="_blank") See Project
-                article.portfolio__article.card.col-sm-12
-                    h3 El Colombiano
-                    h6 HTML, CSS and JavaScript
-                    p.portfolio_desc   Newspaper special remembering a zone on Medellin City affected by violence.
-                    a.portfolio__link.btn(href="http://bit.ly/operacion-orion" target="_blank") See Project
-        //- section#aboutMe.about-me
-        //-         h2 About Me
-        //-         article
-        //-             figure
-        //-                 img(src="", alt="Image description")
-        //-             h3 Description
-        //-             p   This is a description Tag
-        //- section#contactMe.contact-me
-        //-         form(action="/suscription")
-        //-             h2 Let's create something together
-        //-             input(type="text" placeholder="Drop a line" id="email")
-        //-             button Send
-        footer#footer
-            p.date 2019 
-            p.icons 
-                <svg id="squareGraph" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path id="square" d="M5.55,5.55v13.9h13.9V5.55ZM7.87,17.13V7.88h9.25v9.25Z"/></svg>
-                <svg id="circleGraph" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path id="circle" d="M12.5,5A7.5,7.5,0,1,0,20,12.5,7.51,7.51,0,0,0,12.5,5Zm5,7.5a5,5,0,1,1-5-5A5,5,0,0,1,17.49,12.5Z"/></svg>
-                <svg id="triangleGraph" class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 25 25"><path id="triangle" d="M12.5,5,5,20H20ZM8.68,17.73l3.82-7.65,3.82,7.65Z"/></svg>
+            .container
+                .row
+                    .presentation__img.col-lg-4.col-md-5.col-sm-12
+                        img.img-fluid.img-maria(src="./assets/maria-img-site.png", alt="Maria Paulina Arenas Agudelo")
+                    .presentation-wrapper.col-lg-8.col-md-7.col-sm-12
+                        h1.presentation__title Maria Paulina
+                        p.presentation__desc User Interface designer, with great interest in User Experience based in Medellin, Colombia. Passionate about illustrations and digital art. Currently working at SproutLoud Media Networks and creating a community of Dribbblers in Medellin. 
+                        ul.social
+                            li.social-item
+                                a.social-item__link(href="http://bit.ly/jemapau" target="_blank") 
+                                    i.fab.fa-dribbble
+                            li.social-item
+                                a.social-item__link(href="http://bit.ly/2VzKd0q" target="_blank") 
+                                    i.fab.fa-github-alt
+                            li.social-item
+                                a.social-item__link(href="http://bit.ly/linkedin" target="_blank") 
+                                    i.fab.fa-linkedin-in
+                        section#talks.talks
+                            h1.title.no-margin Talks
+                            .talk.col-lg-12
+                                    h4.talk-date 30 de Julio 2020
+                                    p.talk-desc "Codigo y Color: El reto de trabajar con la luz."
+                                    .row.no-margin
+                                        a.button(href="https://youtu.be/xPCX7nmitPY") Video
+                            .talk.col-lg-12
+                                    h4.talk-date 5 de Diciembre 2019
+                                    p.talk-desc "Creando iconos: Una breve historia de los iconos digitales y como comenzar a crear los tuyos."
+                                    .row.no-margin
+                                        a.button(href="https://docs.google.com/presentation/d/1lefaallBD7uRuqUAcLwHSzqlnKaUJEVPrelrXYtVjnw/edit?usp=sharing") Slides
+        footer#footer.footer
+            img.img-fluid.footer-logo(src="/assets/mapau-site.svg", alt="", srcset="")
+            .date 2020

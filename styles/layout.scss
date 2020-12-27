@@ -17,6 +17,30 @@ p {
     line-height: 1.4;
 }
 
+.no-margin { 
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.button {
+    color: $primary;
+    border: 1px solid $primary;
+    border-radius: 25px;
+    padding: 10px 20px;
+    text-align: center;
+    transition: all 0.1s ease-in-out;
+    font-size: $font-sm;
+
+    &:hover {
+        background-color: $primary;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+
 .navigation {
 
     position: fixed;
@@ -71,7 +95,6 @@ p {
 
                 &:focus { 
                     outline: 0px; 
-                    color: $orange;
                 }
 
             }
@@ -84,14 +107,13 @@ p {
 
 section  {
 
+    .title {
+        font-family: $font-title;
+        color: $primary;
+    }
+
     &.presentation {
-
-        display: flex;
-        height: 50vh;
-        align-items: center;
-        align-content: center;
-        justify-content: center;    
-
+        margin-top: 5%;
     }
 
     .presentation {
@@ -99,8 +121,11 @@ section  {
         &-wrapper {
             align-content: center;
 
+            .title { margin-bottom: 20px; }
+
             .social {
-                float: right;
+                padding-left: 0px;
+                margin-bottom: 40px;
 
                 &-item {
 
@@ -108,13 +133,14 @@ section  {
                     display: inline;
 
                     &__link { 
-                        color: $secondary;
+                        color: $primary;
                         font-size: $font-lg;
                         margin: 0px 5px;
 
                         &:hover {
 
                             opacity: 0.5;
+                            text-decoration: none;
 
                         }
                      }
@@ -128,74 +154,25 @@ section  {
         &__title {
 
             font-size: $font-xxl;
-            font-family: 'Abril Fatface', cursive;
+            font-family: $font-title;
             font-weight: normal;
             align-content: center;
             color: $primary;
+            margin-bottom: 40px;
 
         }
 
     }
 
-    &.portfolio {
-        max-width: 1024px;
-        margin: 0 auto;
-        position: relative;
-
-         .wrapper {
-             position: relative;
-
-            .portfolio {
-
-                &__title {
-
-                    padding: 20px 0px;
-                    display: none;
-
-                }
-
-                &__article {
-
-                    padding: 30px;
-                    border-radius: 5px;
-                    border: 0px;
-                    background: white;
-                    height: auto;
-                    display: inline-block;
-                    box-sizing: border-box;
-
-                    h6 {
-                        margin: 10px 0;
-                        font-size: 14px;
-                        color: grey;
-                    }
-
-                    p {  margin: 20px 0px;}
-
-                }
-
- 
-
-                &__link {
-
-                    text-decoration: none;
-                    color: white;
-                    padding: 10px;
-                    border: none;
-                    background: $primary;
-
-                    &:focus { box-shadow: 0 0 0 0.2rem $grey-light; }
-
-                    &:hover { background: $secondary; }
-
-                }
-
-            }
-
-         }
-
-    }
 }
+
+
+.talk {
+    padding: 20px 0px;
+    border-bottom: 1px solid $grey-light;
+}
+
+.talk-date { font-size: $font-sm;  }
 
 footer {
 
@@ -213,7 +190,6 @@ footer {
         margin-bottom: 0px;
         font-weight: bold;
         word-spacing: 0.5em;
-        color: $grey;
         font-size: $font-sm;
     }
 
@@ -224,18 +200,15 @@ footer {
         grid-template-columns: repeat(3, 20px);
     }
 
-    #square {
-        fill: $primary;
-    }
+}
 
-    #circle {
-        fill: $secondary;
-    }
+.footer {
+    color: $primary;
 
-    #triangle {
-        fill: $orange;
+    &-logo {
+        width: 50px;
+        display: inline-block;
     }
-
 }
 
 @media (max-width: 575px) {

@@ -1,36 +1,44 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
 @import url('https://fonts.googleapis.com/css?family=Yantramanav');
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+@font-face { 
+    font-family: 'Bastia'; 
+    src: local('Bastia'), 
+        url(Bastia-Bold.woff2) format('woff2'), 
+        url(Bastia-Bold.woff) format('woff'), 
+        url(Bastia-Bold.ttf) format('truetype'), 
+        url(Bastia-Bold.otf) format('opentype'), 
+        url(Bastia-Bold.eot) format('embedded-opentype'); 
+}
 
 
 // Variable Colors
 
-$grey: #bbbbbb;
-$grey-dark: #dddddd;
 $grey-light: #eeeeee;
 $blue-grey: #607D8B;
-$primary: #4059a8;
+$primary: #000000;
 $secondary: #e9509c;
 $black: #444444;
-$purple-middle: #9839a0;
-$purple-light: #E1BCF2;
-$orange: #f7901e;
 
 //Font Sizes
 
-$font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
-$font-sm: 11px;
-$font-md: 14px;
-$font-lg: 24px;
-$font-xl: 28px;
-$font-xxl: 60px;
+$font-family: 'Work Sans', sans-serif -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+$font-title: 'Bastia', serif;
+$font-xs: 0.05em;
+$font-sm: 0.88em;
+$font-md: 18px;
+$font-lg: 1.33em;
+$font-xl: 1.55em;
+$font-xxl: 3.3em;
 
 * {
     margin: 0px;
 }
 
 body {
-    background-color: #f1f1f1;
-    font-family: 'Yantramanav', 'Arial', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-size: $font-md;
 }
 
 

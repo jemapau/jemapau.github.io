@@ -17,6 +17,8 @@
     "vue": "^2.6.10"
   },
   "dependencies": {
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.30.0",
     "static-server": "^2.2.1"
   }
 }
