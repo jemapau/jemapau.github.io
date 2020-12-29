@@ -26,6 +26,13 @@ body {
 p {
   line-height: 1.4; }
 
+a.link {
+  font-weight: 300;
+  text-decoration: underline;
+  color: #000000; }
+  a.link:hover {
+    color: #000000; }
+
 .no-margin {
   margin-top: 0px;
   margin-bottom: 0px;

@@ -17,6 +17,17 @@ p {
     line-height: 1.4;
 }
 
+a.link {
+    font-weight: 300;
+    text-decoration: underline;
+    color: $primary;
+
+    &:hover {
+        color: $primary;
+    }
+    
+}
+
 .no-margin { 
     margin-top: 0px;
     margin-bottom: 0px;
