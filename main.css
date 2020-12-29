@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans&display=swap");
 @font-face {
   font-family: 'Bastia';
-  src: local("Bastia"), url(Bastia-Bold.woff2) format("woff2"), url(Bastia-Bold.woff) format("woff"), url(Bastia-Bold.ttf) format("truetype"), url(Bastia-Bold.otf) format("opentype"), url(Bastia-Bold.eot) format("embedded-opentype"); }
+  src: local("Bastia"), url(/fonts/woff/Bastia-Bold.woff2) format("woff2"), url(/fonts/woff/Bastia-Bold.woff) format("woff"), url(/fonts/ttf/Bastia-Bold.ttf) format("truetype"), url(/fonts/otf/Bastia-Bold.otf) format("opentype"), url(/fonts/otf/Bastia-Bold.eot) format("embedded-opentype"); }
 * {
   margin: 0px; }
 
